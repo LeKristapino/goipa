@@ -1,4 +1,4 @@
-module LeKristapino
+module github.com/LeKristapino/goipa
 
 go 1.20
 

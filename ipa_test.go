@@ -10,7 +10,7 @@ import (
 	"os/user"
 	"testing"
 
-	ipa "LeKristapino"
+	ipa "github.com/LeKristapino/goipa"
 
 	_ "github.com/joho/godotenv/autoload"
 	log "github.com/sirupsen/logrus"

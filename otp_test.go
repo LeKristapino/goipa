@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	ipa "LeKristapino"
+	ipa "github.com/LeKristapino/goipa"
 
 	"github.com/brianvoe/gofakeit/v6"
 	"github.com/stretchr/testify/assert"

@@ -12,7 +12,7 @@ over HTTPS.
 Install using go tools:
 
 ```
-$ go get LeKristapino
+$ go get github.com/LeKristapino/goipa
 ```
 
 Example calling FreeIPA user-show:
@@ -23,7 +23,7 @@ package main
 import (
     "fmt"
 
-    "LeKristapino"
+    "github.com/LeKristapino/goipa"
 )
 
 func main() {
