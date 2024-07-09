@@ -100,14 +100,14 @@ func (c *Client) CheckGroupExist(cn string) (bool, error) {
 	return true, nil
 }
 
-func (c *Client) AddUserToGroup(groupCn string, userUid string) (*GroupRecord, error) {
+func (c *Client) AddUserToGroup(groupCn string, username string) (*GroupRecord, error) {
 	var groupRec *GroupRecord
 
 	var options = map[string]interface{}{
 		"no_members": false,
 		"raw":        false,
 		"all":        false,
-		"user":       []string{userUid},
+		"user":       []string{username},
 	}
 
 	res, err := c.rpc("group_add_member", []string{groupCn}, options)
@@ -123,12 +123,12 @@ func (c *Client) AddUserToGroup(groupCn string, userUid string) (*GroupRecord, e
 	return groupRec, nil
 }
 
-func (c *Client) RemoveUserFromGroup(groupCn string, userUid string) error {
+func (c *Client) RemoveUserFromGroup(groupCn string, username string) error {
 	var options = map[string]interface{}{
 		"no_members": false,
 		"raw":        false,
 		"all":        false,
-		"user":       []string{userUid},
+		"user":       []string{username},
 	}
 
 	_, err := c.rpc("group_remove_member", []string{groupCn}, options)
