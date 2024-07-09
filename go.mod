@@ -1,4 +1,4 @@
-module github.com/ubccr/goipa
+module LeKristapino
 
 go 1.20
 

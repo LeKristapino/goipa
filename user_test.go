@@ -8,10 +8,11 @@ import (
 	"strings"
 	"testing"
 
+	ipa "LeKristapino"
+
 	"github.com/brianvoe/gofakeit/v6"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/ubccr/goipa"
 )
 
 func addTestUser(c *ipa.Client, username, password string) (*ipa.User, error) {

@@ -10,11 +10,12 @@ import (
 	"os/user"
 	"testing"
 
+	ipa "LeKristapino"
+
 	_ "github.com/joho/godotenv/autoload"
 	log "github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/ubccr/goipa"
 )
 
 var (

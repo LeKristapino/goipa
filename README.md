@@ -12,7 +12,7 @@ over HTTPS.
 Install using go tools:
 
 ```
-$ go get github.com/ubccr/goipa
+$ go get LeKristapino
 ```
 
 Example calling FreeIPA user-show:
@@ -23,7 +23,7 @@ package main
 import (
     "fmt"
 
-    "github.com/ubccr/goipa"
+    "LeKristapino"
 )
 
 func main() {
@@ -46,7 +46,7 @@ func main() {
 ## Hacking
 
 Development and testing goipa uses docker-compose. The scripts to spin up a
-FreeIPA test server in docker were copied/adopted from [this great repository](https://github.com/adelton/webauthinfra). 
+FreeIPA test server in docker were copied/adopted from [this great repository](https://github.com/adelton/webauthinfra).
 Most of the scripts in `container/` directory are written by Jan Pazdziora and
 licensed under Apache 2.0 and modified for use with goipa.
 
